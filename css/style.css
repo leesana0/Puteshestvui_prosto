@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f3ecde;
+    font-family: 'Main_font';
+}
+
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'Headline_font';
+    src: url(../fonts/conthrax-sb.ttf);
+}
+
+@font-face {
+    font-family: 'Main_font';
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Number_font';
+    src: url(../fonts/GolosText-VariableFont_wght.ttf);
+}
+
+/* Контейнер */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Заголовки блоков */
+.headlines {
+    font-family: 'Headline_font';
+    color: #a9501c;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+/* Начало шапки */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #f3ecdebd;
+    border: 1px solid #183451;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header a {
+    color: #183451;
+}
+
+.header-logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-logo-image {
+    width: 48px;
+}
+
+.header-logo-name {
+    font-size: 18px;
+    font-family: 'Headline_font';
+    width: 170px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-nav a:hover {
+    font-weight: bold;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-contacts-phone {
+    font-family: 'Number_font';
+    font-weight: 100;
+}
+
+.header-contacts-button {
+    padding: 16px 32px;
+    background-color: #a9501c;
+    border-radius: 16px;
+    color: #f3ecde;
+    border: 1px solid #a9501c;
+}
+
+.header-contacts-button:hover {
+    background: transparent;
+    color: #a9501c;
+}
+
+/* Конец шапки */
+
+/* Начало баннера */
+.banner {
+    background: url(../images/banner-background.webp) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-text-headline {
+    font-family: 'Headline_font';
+    color: #a9501c;
+    font-size: 64px;
+    text-align: center;
+}
+
+.banner-text-description {
+    color: #183451;
+    font-size: 24px;
+}
+
+.banner-button {
+    color: #f3ecde;
+    padding: 24px 120px;
+    background-color: #a9501c;
+    border-radius: 32px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.banner-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 4px 32px #a9501c;
+}
+
+/* Конец баннера */
+
+/* Начало каталога туров */
+.catalog {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.catalog-filter {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.catalog-filter-item {
+    padding: 16px 32px;
+    border: 1px solid #183451;
+    border-radius: 32px;
+    color: #183451;
+    cursor: pointer;
+}
+
+.filter-active {
+    background-color: #183451;
+    color: #f3ecde;
+}
+
+.catalog-filter-item:hover {
+    background-color: #183451;
+    color: #f3ecde;
+}
+
+.catalog-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.catalog-card {
+    width: 300px;
+    color: #183451;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #183451;
+    border-radius: 56px;
+}
+
+.catalog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 4px 32px #a9501c80;
+}
+
+.catalog-card-image {
+    width: 299px;
+    height: 299px;
+    border-radius: 56px 56px 0 0;
+    object-fit: cover;
+}
+
+.catalog-card-text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catalog-card-name {
+    color: #183451;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.catalog-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-card-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.catalog-card-location-image {
+    width: 16px;
+}
+
+.catalog-card-price {
+    font-family: 'Number_font';
+    font-weight: 700;
+    font-size: 20px;
+    color: #a9501c;
+}
+
+.catalog-card-button {
+    display: block;
+    padding: 16px;
+    color: #f3ecde;
+    width: 100%;
+    background-color: #a9501c;
+    border-radius: 16px;
+    border: 1px solid #a9501c;
+    text-align: center;
+    font-size: 18px;
+}
+
+.catalog-card-button:hover {
+    background-color: transparent;
+    color: #a9501c;
+}
+
+/* Конец каталога туров */
+
+/* Начало преимуществ */
+.benefits {
+    padding: 72px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.benefits-block {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.benefits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    color: #183451;
+    background-color: #ffffff;
+    border: 1px solid #183451;
+    border-radius: 40px;
+    width: 300px;
+}
+
+.benefits-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 4px 32px #a9501c80;
+}
+
+.benefits-card-headline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.benefits-card-icon-image {
+    width: 72px;
+}
+
+#individual-image {
+    width: 40px;
+}
+
+.benefits-card-name {
+    font-size: 20px;
+}
+
+.benefits-card-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Конец преимуществ */
+
+/* Начало экспертов */
+.experts {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.experts-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experts-card {
+    color: #183451;
+    border: 1px solid #183451;
+    border-radius: 40px;
+    width: 413px;
+}
+
+.experts-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 4px 4px 32px #a9501c80;
+}
+
+.experts-card-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 40px 40px 0 0;
+}
+
+.experts-card-text {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: justify;
+}
+
+.experts-card-name {
+    font-size: 24px;
+}
+
+.experts-card-position {
+    color: #a9501c;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.experts-card-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.experts-card-specialization {
+    padding: 4px 16px;
+    border: 1px solid #183451;
+    border-radius: 32px;
+    font-size: 18px;
+}
+
+.expert-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.experts-button {
+    display: inline-block;
+    padding: 24px 120px;
+    background-color: #a9501c;
+    border: 1px solid #a9501c;
+    border-radius: 32px;
+    color: #f3ecde;
+    font-size: 18px;
+}
+
+.experts-button:hover {
+    background-color: transparent;
+    color: #a9501c;
+}
+
+/* Конец экспертов */
+
+/* Начало вопросов */
+.faq {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.faq-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.faq-item {
+    position: relative;
+    padding: 32px;
+    color: #183451;
+    background-color: #ffffff;
+    border: 1px solid #183451;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    box-shadow: 4px 4px 32px #a9501c80;
+}
+
+.faq-item-question {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.faq-item-question::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 32px;
+    font-size: 32px;
+    color: #a9501c;
+}
+
+.faq-item[open] .faq-item-question::after {
+    content: '−';
+}
+
+.faq-item-answer {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 850px;
+}
+
+/* Конец вопросов */
+
+/* Начало формы */
+.form {
+    margin: 96px 0 160px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px;
+    background-color: #a9501c;
+    border-radius: 56px;
+    color: #f3ecde;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 650px;
+}
+
+.form-text-headline {
+    font-family: 'Headline_font';
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.form-text-description {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 500px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 24px;
+    background-color: #f3ecde;
+    border: 1px solid #f3ecde;
+    border-radius: 24px;
+    font-family: 'Main_font';
+    font-size: 18px;
+}
+
+.form-input::placeholder {
+    color: #183451;
+    opacity: 0.7;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #183451;
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+    width: 100%;
+}
+
+.form-agree {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    align-items: flex-start;
+}
+
+.form-agree a {
+    color: #f3ecde;
+    border-bottom: 1px solid #f3ecde;
+    font-weight: 500;
+}
+
+.form-agree input {
+    width: 20px;
+    height: 20px;
+    accent-color: #183451;
+}
+
+.form-button {
+    padding: 24px 40px;
+    color: #f3ecde;
+    background-color: #183451;
+    border: 1px solid #183451;
+    border-radius: 32px;
+    font-family: 'Main_font';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    color: #183451;
+    background-color: #f3ecde;
+}
+
+/* Конец формы */
+
+/* Начало подвала */
+.footer {
+    padding: 80px 0;
+    color: #f3ecde;
+    background-color: #183451;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-logo-image {
+    width: 48px;
+}
+
+.footer-logo-name {
+    width: 170px;
+    font-family: 'Headline_font';
+    font-size: 18px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.footer-menu-contact {
+    color: #f3ecde;
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-menu-contact img {
+    width: 20px;
+}
+
+.footer-menu-contact:hover {
+    color: #a9501c;
+}
+
+.footer-menu-headline {
+    font-size: 18px;
+    color: #a9501c;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #f3ecdea3;
+    text-align: center;
+}
+
+#phone,
+.year {
+    font-family: 'Number_font';
+    font-weight: 100;
+}
+
+/* Кнопка Наверх */
+.up-button {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: #a9501c;
+    border-radius: 50%;
+}
+
+.up-button:hover {
+    transform: translateY(-8px);
+}

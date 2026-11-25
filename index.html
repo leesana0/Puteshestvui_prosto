@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествуй просто</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container">
+        <a href="#" class="header-logo">
+            <img class="header-logo-image" src="images/logo/logo.svg" alt="Логотип">
+            <h2 class="header-logo-name">
+                Путешествуй просто
+            </h2>
+        </a>
+        <nav class="header-nav">
+            <a href="#tours">Туры</a>
+            <a href="#benefits">Преимущества</a>
+            <a href="#experts">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header-contacts">
+            <div class="header-contacts-phone">
+                <a href="tel:+79976573280">+7 (997) 657-32-80</a>
+            </div>
+            <div class="btn">
+                <a class="header-contacts-button" href="#form">Подобрать тур</a>
+            </div>
+        </div>
+    </header>
+    <!-- Конец шапки -->
+
+    <!-- Начало баннера -->
+    <div class="banner">
+        <div class="banner-text container">
+            <h1 class="banner-text-headline">
+                Путешествие мечты начинается здесь
+            </h1>
+            <p class="banner-text-description">Подберём отдых для всей семьи с вылетом из Казани</p>
+        </div>
+        <div class="btn container">
+            <a class="banner-button" href="#tours">Найти свой тур</a>
+        </div>
+    </div>
+    <!-- Конец баннера -->
+
+    <!-- Начало каталога туров -->
+    <div class="container">
+        <div class="catalog" id="tours">
+            <h2 class="headlines">
+                Горящие туры и выгодные предложения
+            </h2>
+            <div class="catalog-filter">
+                <div class="catalog-filter-item filter-active">Все</div>
+                <div class="catalog-filter-item">Россия</div>
+                <div class="catalog-filter-item">Турция</div>
+                <div class="catalog-filter-item">Египет</div>
+                <div class="catalog-filter-item">ОАЭ</div>
+                <div class="catalog-filter-item">Азия</div>
+            </div>
+            <div class="catalog-block">
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/spb.webp" alt="Картинка Питера">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Северная столица за 2 недели</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Россия</p>
+                            </div>
+                            <p class="catalog-card-price">89 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/sochi.webp" alt="Картинка Сочи">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Черное море всей семьёй</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Россия</p>
+                            </div>
+                            <p class="catalog-card-price">199 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/antalya.webp" alt="Картинка Антальи">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Анталья: всё включено</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Турция</p>
+                            </div>
+                            <p class="catalog-card-price">119 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/kemer.webp" alt="Картинка Кемера">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Кемер: горы, море и солнце</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Турция</p>
+                            </div>
+                            <p class="catalog-card-price">104 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/hurgada.webp" alt="Картинка Хургады">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Хургада: тёплое Красное море</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Египет</p>
+                            </div>
+                            <p class="catalog-card-price">129 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/shshsh.webp" alt="Картинка Шарм-эш-Шейха">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Шарм-эш-Шейх: отдых с детьми</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Египет</p>
+                            </div>
+                            <p class="catalog-card-price">249 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/dubai.webp" alt="Картинка Дубая">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Дубай: отдых и впечатления</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>ОАЭ</p>
+                            </div>
+                            <p class="catalog-card-price">145 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-card">
+                    <img class="catalog-card-image" src="images/catalog/phuket.webp" alt="Картинка Пхукета">
+                    <div class="catalog-card-text">
+                        <h3 class="catalog-card-name">Пхукет: тропический отпуск</h3>
+                        <div class="catalog-card-info">
+                            <div class="catalog-card-location">
+                                <img class="catalog-card-location-image" src="images/icons/location.svg" alt="Локатор">
+                                <p>Азия</p>
+                            </div>
+                            <p class="catalog-card-price">169 999 ₽</p>
+                        </div>
+                        <div class="btn">
+                            <a class="catalog-card-button" href="#form">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец каталога туров -->
+
+    <!-- Начало преимуществ -->
+    <div class="container">
+        <div class="benefits" id="benefits">
+            <h2 class="headlines">
+                Почему выбирают нас
+            </h2>
+            <div class="benefits-block">
+                <div class="benefits-card">
+                    <div class="benefits-card-headline">
+                        <img class="benefits-card-icon-image" id="individual-image" src="images/icons/individual.svg"
+                            alt="Иконка">
+                        <h3 class="benefits-card-name">Индивидуальный подбор</h3>
+                    </div>
+                    <p class="benefits-card-description">Учитываем пожелания семьи и бюджет</p>
+                </div>
+                <div class="benefits-card">
+                    <div class="benefits-card-headline">
+                        <img class="benefits-card-icon-image" src="images/icons/price.svg" alt="Иконка">
+                        <h3 class="benefits-card-name">Прозрачная стоимость </h3>
+                    </div>
+                    <p class="benefits-card-description">Объясняем состав и условия предложения</p>
+                </div>
+                <div class="benefits-card">
+                    <div class="benefits-card-headline">
+                        <img class="benefits-card-icon-image" src="images/icons/help.svg" alt="Иконка">
+                        <h3 class="benefits-card-name">Поддержка туристов</h3>
+                    </div>
+                    <p class="benefits-card-description">Помогаем на всех этапах подготовки и путешествия</p>
+                </div>
+                <div class="benefits-card">
+                    <div class="benefits-card-headline">
+                        <img class="benefits-card-icon-image" src="images/icons/heart.svg" alt="Иконка">
+                        <h3 class="benefits-card-name">Семейные путешествия</h3>
+                    </div>
+                    <p class="benefits-card-description">Подбираем отдых с учётом возраста детей</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец преимуществ -->
+
+    <!-- Начало экспертов -->
+    <div class="container">
+        <div class="experts" id="experts">
+            <h2 class="headlines">
+                Наши эксперты
+            </h2>
+            <div class="experts-block">
+                <div class="experts-card">
+                    <img class="experts-card-image" src="images/experts/expert1.webp" alt="Анна Соколова">
+                    <div class="experts-card-text">
+                        <h3 class="experts-card-name">Анна Соколова</h3>
+                        <p class="experts-card-position">Старший консультант</p>
+                        <p class="experts-card-description">Подбирает путешествия с детьми любого возраста:
+                            учитывает перелёт, климат и режим малыша.</p>
+                        <p class="experts-card-specialization">Семейный отдых</p>
+                    </div>
+                </div>
+                <div class="experts-card">
+                    <img class="experts-card-image" src="images/experts/expert2.webp" alt="Дмитрий Воронов">
+                    <div class="experts-card-text">
+                        <h3 class="experts-card-name">Дмитрий Воронов</h3>
+                        <p class="experts-card-position">Менеджер по направлениям</p>
+                        <p class="experts-card-description">Знает лучшие отели Турции, Египта и ОАЭ и подскажет, где
+                            отдых будет комфортным и выгодным.</p>
+                        <p class="experts-card-specialization">Пляжные направления</p>
+                    </div>
+                </div>
+                <div class="experts-card">
+                    <img class="experts-card-image" src="images/experts/expert3.webp" alt="Елена Хасанова">
+                    <div class="experts-card-text">
+                        <h3 class="experts-card-name">Елена Хасанова</h3>
+                        <p class="experts-card-position">Эксперт по авторским турам</p>
+                        <p class="experts-card-description">Собирает маршруты по Азии и России под ваши пожелания: от
+                            первого звонка до возвращения домой.</p>
+                        <p class="experts-card-specialization">Индивидуальные путешествия</p>
+                    </div>
+                </div>
+            </div>
+            <div class="expert-btn">
+                <a class="experts-button" href="#form">Получить консультацию</a>
+            </div>
+        </div>
+    </div>
+    <!-- Конец экспертов -->
+
+    <!-- Начало вопросов -->
+    <div class="container">
+        <div class="faq" id="faq">
+            <h2 class="headlines">
+                Часто задаваемые вопросы
+            </h2>
+            <div class="faq-block">
+                <details class="faq-item" open>
+                    <summary class="faq-item-question">Что входит в стоимость тура?</summary>
+                    <p class="faq-item-answer">В стоимость обычно входят перелёт, проживание, питание по выбранному типу
+                        и трансфер. Точный состав мы подробно объясняем до оплаты.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-question">Можно ли путешествовать с маленьким ребёнком?</summary>
+                    <p class="faq-item-answer">Да. Мы подбираем отели с детской инфраструктурой, учитываем длительность
+                        перелёта и климат направления.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-question">Какие документы нужны?</summary>
+                    <p class="faq-item-answer">Для поездки по России нужен паспорт, для зарубежных стран загранпаспорт
+                        и, при необходимости, виза. Для детей требуется свидетельство о рождении или паспорт. Список
+                        документов мы уточним для вашего направления.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-question">Можно ли изменить даты поездки?</summary>
+                    <p class="faq-item-answer">Это зависит от условий туроператора и авиакомпании. Чем раньше вы нам
+                        сообщите, тем больше шансов изменить даты с минимальными потерями.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-item-question">Как происходит бронирование?</summary>
+                    <p class="faq-item-answer">Вы оставляете заявку, мы подбираем варианты и согласовываем детали, затем
+                        заключаем договор и оплачиваем тур. Документы на поездку приходят вам заранее.</p>
+                </details>
+            </div>
+        </div>
+    </div>
+    <!-- Конец вопросов -->
+
+    <!-- Начало формы -->
+    <div class="container">
+        <div class="form" id="form">
+            <div class="form-text">
+                <h2 class="form-text-headline">
+                    Ваш идеальный отпуск ближе, чем кажется!
+                </h2>
+                <p class="form-text-description">Расскажите, каким вы представляете свой отдых, а мы поможем
+                    подобрать подходящий вариант</p>
+            </div>
+            <form class="form-block">
+                <input class="form-input" type="text" placeholder="Ваше имя" required>
+                <input class="form-input" type="tel" placeholder="Ваш телефон" required>
+                <textarea class="form-input form-textarea" placeholder="Пожелания к отдыху"></textarea>
+                <label class="form-agree">
+                    <input type="checkbox" required>
+                    <span>Я согласен(на) на обработку <a href="documents/privacy_policy.pdf"
+                            target="_blank">персональных данных</a></span>
+                </label>
+                <button class="form-button" type="submit">Получить подборку туров</button>
+            </form>
+        </div>
+    </div>
+    <!-- Конец формы -->
+
+    <!-- Начало подвала -->
+    <footer class="footer">
+        <div class="footer-block container" id="contacts">
+            <div class="footer-logo">
+                <img class="footer-logo-image" src="images/logo/logo-footer.svg" alt="Логотип">
+                <h2 class="footer-logo-name">Путешествуй просто</h2>
+            </div>
+            <div class="footer-menu">
+                <h3 class="footer-menu-headline">Контакты</h3>
+                <a class="footer-menu-contact" id="phone" href="tel:+79976573280" target="_blank"><img
+                        src="images/icons/phone.svg" alt="Телефон">+7 (997) 657-32-80</a>
+                <a class="footer-menu-contact" href="mailto:puteshestvuy-prosto@yandex.ru" target="_blank"><img
+                        src="images/icons/mail.svg" alt="Почта">puteshestvuy-prosto@yandex.ru</a>
+                <a href="https://yandex.ru/maps/-/CXf6aT~m" class="footer-menu-contact" target="_blank"><img
+                        src="images/icons/locator-footer.svg" alt="Локатор">г.Казань,
+                    ул.Кремлевская, 12</a>
+            </div>
+            <div class="footer-menu">
+                <h3 class="footer-menu-headline">Мы в сети</h3>
+                <a class="footer-menu-contact" href="https://vk.ru/puteshestvuy-prosto" target="_blank"><img
+                        src="images/icons/vk.svg" alt="ВКонтакте">ВКонтакте</a>
+                <a class="footer-menu-contact" href="https://max.ru/puteshestvuy-prosto" target="_blank"><img
+                        src="images/icons/max.svg" alt="Max">Max</a>
+            </div>
+            <div class="footer-menu">
+                <h3 class="footer-menu-headline">Документы</h3>
+                <a class="footer-menu-contact" href="documents/privacy_policy.pdf" target="_blank">Политика
+                    конфиденциальности</a>
+                <a class="footer-menu-contact" href="documents/user_agreement.pdf" target="_blank">Пользовательское
+                    соглашение</a>
+            </div>
+        </div>
+        <p class="footer-copyright container">© <span class="year">2026</span> «Путешествуй просто». Все права защищены.
+        </p>
+    </footer>
+    <!-- Конец подвала -->
+
+    <!-- Кнопка Наверх -->
+    <a class="up-button" href="#"><img src="images/icons/arrow.svg" alt="Стрелка"></a>
+</body>
+
+</html>
